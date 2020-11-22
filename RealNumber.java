@@ -30,4 +30,8 @@ public class RealNumber{
     this.value *= other.value;
     return null;
   }
+  public RealNumber divide(RealNumber other){
+    this.value /= other.value;
+    return null;
+  }
 }
