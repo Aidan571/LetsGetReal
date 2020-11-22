@@ -23,5 +23,8 @@ public class RealAndRationalNumberTester{
   System.out.println(ran1.getValue());
   System.out.println(ran2.getValue());
   System.out.println(ran3.getValue());
+  System.out.println(ran1.getNumerator());
+  System.out.println(ran2.getNumerator());
+  System.out.println(ran3.getNumerator());
 }
 }
