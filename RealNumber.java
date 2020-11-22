@@ -34,4 +34,8 @@ public class RealNumber{
     this.value /= other.value;
     return null;
   }
+  public RealNumber subtract(RealNumber other){
+    this.value -= other.value;
+    return null;
+  }
 }
