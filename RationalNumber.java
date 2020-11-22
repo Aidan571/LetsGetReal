@@ -20,4 +20,7 @@ public class RationalNumber extends RealNumber{
   public int getNumerator(){
     return this.numerator;
   }
+  public int getDenominator(){
+    return this.denominator;
+  }
 }
