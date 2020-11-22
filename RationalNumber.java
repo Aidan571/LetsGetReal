@@ -5,8 +5,6 @@ public class RationalNumber extends RealNumber{
     super(0.0);
     numerator = nume;
     denominator = deno;
-  }
-  public double getValue(){
     if(this.denominator == 0){
       denominator = 1;
       numerator = 0;
@@ -15,6 +13,11 @@ public class RationalNumber extends RealNumber{
       denominator = denominator * -1;
       numerator = numerator * -1;
     }
+  }
+  public double getValue(){
     return numerator * 1.0 /denominator;
+  }
+  public int getNumerator(){
+    return this.numerator;
   }
 }
