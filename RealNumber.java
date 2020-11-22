@@ -23,19 +23,19 @@ public class RealNumber{
     return (other.value / this.value <= 1.00001 && other.value / this.value >= 0.99990) || (this.value / other.value <= 1.00001 && this.value / other.value >= 0.99990);
   }
   public RealNumber add(RealNumber other){
-    this.value += other.value;
-    return null;
+    RealNumber result = new RealNumber(this.value += other.value);
+    return result;
   }
   public RealNumber multiply(RealNumber other){
-    this.value *= other.value;
-    return null;
+    RealNumber result = new RealNumber(this.value *= other.value);
+    return result;
   }
   public RealNumber divide(RealNumber other){
-    this.value /= other.value;
-    return null;
+    RealNumber result = new RealNumber(this.value /= other.value);
+    return result;
   }
   public RealNumber subtract(RealNumber other){
-    this.value -= other.value;
-    return null;
+    RealNumber result = new RealNumber(this.value -= other.value);
+    return result;
   }
 }
