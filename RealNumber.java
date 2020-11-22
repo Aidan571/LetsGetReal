@@ -26,4 +26,8 @@ public class RealNumber{
     this.value += other.value;
     return null;
   }
+  public RealNumber multiply(RealNumber other){
+    this.value *= other.value;
+    return null;
+  }
 }
