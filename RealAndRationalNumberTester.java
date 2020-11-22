@@ -9,5 +9,7 @@ public class RealAndRationalNumberTester{
   RealNumber rn5 = new RealNumber(10000000000000001.0);
   RealNumber rn6 = new RealNumber(10000000000000000.0);
   System.out.println(rn5.equals(rn6));
+  rn3.add(rn4);
+  System.out.println(rn3.getValue());
 }
 }
