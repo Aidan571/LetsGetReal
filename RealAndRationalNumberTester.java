@@ -11,5 +11,7 @@ public class RealAndRationalNumberTester{
   System.out.println(rn5.equals(rn6));
   rn3.add(rn4);
   System.out.println(rn3.getValue());
+  rn3.multiply(rn4);
+  System.out.println(rn3.getValue());
 }
 }
