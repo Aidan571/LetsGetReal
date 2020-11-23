@@ -27,4 +27,7 @@ public class RationalNumber extends RealNumber{
     RationalNumber result = new RationalNumber(this.denominator,this.numerator);
     return result;
   }
+  public boolean equals(RationalNumber other){
+    return (this.numerator == other.numerator && this.denominator == other.denominator);
+  }
 }
