@@ -39,5 +39,8 @@ public class RealAndRationalNumberTester{
   System.out.println(ran3.divide(ran2).toString());
   System.out.println(ran3.divide(ran5).toString());
   System.out.println(ran2.divide(ran5).toString());
+  System.out.println(ran3.add(ran2).toString());
+  System.out.println(ran3.add(ran5).toString());
+  System.out.println(ran2.add(ran5).toString());
 }
 }
