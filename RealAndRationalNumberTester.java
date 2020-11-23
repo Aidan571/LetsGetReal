@@ -35,6 +35,5 @@ public class RealAndRationalNumberTester{
   System.out.println(ran2.equals(ran4));
   System.out.println(ran2.toString());
   System.out.println(ran3.toString());
-
 }
 }
