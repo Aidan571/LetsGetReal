@@ -63,4 +63,10 @@ public class RationalNumber extends RealNumber{
     }
     return result;
   }
+  public RationalNumber add(RationalNumber other){
+    int denom = this.denominator * other.denominator;
+    int numer = (this.numerator * other.denominator + other.numerator * this.denominator);
+    RationalNumber result = new RationalNumber(numer,denom);
+    return result;
+  }
 }
