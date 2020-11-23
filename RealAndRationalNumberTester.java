@@ -9,17 +9,15 @@ public class RealAndRationalNumberTester{
   RealNumber ren5 = new RealNumber(10000000000000001.0);
   RealNumber ren6 = new RealNumber(10000000000000000.0);
   System.out.println(ren5.equals(ren6));
-  ren3.add(ren4);
-  System.out.println(ren3.getValue());
-  ren3.multiply(ren4);
-  System.out.println(ren3.getValue());
-  ren3.divide(ren4);
-  System.out.println(ren3.getValue());
-  ren3.subtract(ren4);
-  System.out.println(ren3.getValue());
+  System.out.println(ren3.add(ren4));
+  System.out.println(ren3.multiply(ren4));
+  System.out.println(ren3.divide(ren4));
+  System.out.println(ren3.subtract(ren4));
   RationalNumber ran1 = new RationalNumber(5,0);
   RationalNumber ran2 = new RationalNumber(5,-3);
   RationalNumber ran3 = new RationalNumber(15,6);
+  RationalNumber ran5 = new RationalNumber(20,1);
+  System.out.println(ren3.add(ran5));
   System.out.println(ran1.getValue());
   System.out.println(ran2.getValue());
   System.out.println(ran3.getValue());
@@ -35,5 +33,8 @@ public class RealAndRationalNumberTester{
   System.out.println(ran2.equals(ran4));
   System.out.println(ran2.toString());
   System.out.println(ran3.toString());
+  System.out.println(ran3.multiply(ran2).toString());
+  System.out.println(ran3.multiply(ran5).toString());
+  System.out.println(ran2.multiply(ran5).toString());
 }
 }
