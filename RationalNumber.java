@@ -10,15 +10,15 @@ public class RationalNumber extends RealNumber{
       numerator = 0;
     }
     else if(this.denominator < 0){
-      denominator = denominator * -1;
-      numerator = numerator * -1;
+      denominator *= -1;
+      numerator *= -1;
     }
     int divisor = gcd(numerator,denominator);
     numerator /= divisor;
     denominator /= divisor;
   }
   public double getValue(){
-    return numerator * 1.0 /denominator;
+    return numerator * 1.0 / denominator;
   }
   public int getNumerator(){
     return this.numerator;
@@ -46,5 +46,13 @@ public class RationalNumber extends RealNumber{
     int divisor = gcd(this.numerator,this.denominator);
     numerator /= divisor;
     denominator /= divisor;
+  }
+  public RationalNumber multiply(RationalNumber other){
+    RationalNumber result = new RationalNumber((this.numerator * other.numerator), (this.denominator * other.denominator));
+    if(result.denominator < 0){
+      result.denominator *= -1;
+      result.numerator *= -1;
+    }
+    return result;
   }
 }
