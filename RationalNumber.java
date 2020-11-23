@@ -55,4 +55,12 @@ public class RationalNumber extends RealNumber{
     }
     return result;
   }
+  public RationalNumber divide(RationalNumber other){
+    RationalNumber result = new RationalNumber((this.numerator * other.denominator), (this.denominator * other.numerator));
+    if(result.denominator < 0){
+      result.denominator *= -1;
+      result.numerator *= -1;
+    }
+    return result;
+  }
 }
