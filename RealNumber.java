@@ -13,14 +13,14 @@ public class RealNumber{
     return ""+getValue();
   }
   public boolean equals(RealNumber other){
-    if(other.value == 0){
-      return this.value == 0;
+    if(other.getValue() == 0){
+      return this.getValue() == 0;
       }
-    else if(this.value == 0){
-      return other.value == 0;
+    else if(this.getValue() == 0){
+      return other.getValue() == 0;
       }
     else
-    return (other.value / this.value <= 1.00001 && other.value / this.value >= 0.99990) || (this.value / other.value <= 1.00001 && this.value / other.value >= 0.99990);
+    return (other.getValue() / this.getValue() <= 1.00001 && other.getValue() / this.getValue() >= 0.99990) || (this.getValue() / other.getValue() <= 1.00001 && this.getValue() / other.getValue() >= 0.99999);
   }
   public RealNumber add(RealNumber other){
     RealNumber result = new RealNumber(this.value += other.getValue());
