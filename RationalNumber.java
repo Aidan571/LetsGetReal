@@ -13,6 +13,9 @@ public class RationalNumber extends RealNumber{
       denominator = denominator * -1;
       numerator = numerator * -1;
     }
+    int divisor = gcd(numerator,denominator);
+    numerator /= divisor;
+    denominator /= divisor;
   }
   public double getValue(){
     return numerator * 1.0 /denominator;
@@ -31,6 +34,17 @@ public class RationalNumber extends RealNumber{
     return (this.numerator == other.numerator && this.denominator == other.denominator);
   }
   public String toString(){
-    return "" + numerator + '/' + denominator; 
+    return "" + numerator + '/' + denominator;
+  }
+  private static int gcd(int a, int b){
+    if(b ==0){
+      return a;
+    }
+    return gcd(b, a%b);
+  }
+  private void reduce(){
+    int divisor = gcd(this.numerator,this.denominator);
+    numerator /= divisor;
+    denominator /= divisor;
   }
 }
