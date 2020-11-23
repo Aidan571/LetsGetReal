@@ -30,5 +30,8 @@ public class RealAndRationalNumberTester{
   System.out.println(ran2.getDenominator());
   System.out.println(ran3.getDenominator());
   System.out.println(ran3.reciprocal().getValue());
+  System.out.println(ran2.equals(ran3));
+  RationalNumber ran4 = ran2;
+  System.out.println(ran2.equals(ran4));
 }
 }
