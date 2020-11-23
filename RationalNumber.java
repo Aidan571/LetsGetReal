@@ -23,4 +23,8 @@ public class RationalNumber extends RealNumber{
   public int getDenominator(){
     return this.denominator;
   }
+  public RationalNumber reciprocal(){
+    RationalNumber result = new RationalNumber(this.denominator,this.numerator);
+    return result;
+  }
 }
