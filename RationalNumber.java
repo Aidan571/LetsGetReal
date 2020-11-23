@@ -30,4 +30,7 @@ public class RationalNumber extends RealNumber{
   public boolean equals(RationalNumber other){
     return (this.numerator == other.numerator && this.denominator == other.denominator);
   }
+  public String toString(){
+    return "" + numerator + '/' + denominator; 
+  }
 }
