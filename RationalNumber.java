@@ -69,4 +69,14 @@ public class RationalNumber extends RealNumber{
     RationalNumber result = new RationalNumber(numer,denom);
     return result;
   }
+  public RationalNumber subtract(RationalNumber other){
+    int denom = this.denominator * other.denominator;
+    int numer = (this.numerator * other.denominator - other.numerator * this.denominator);
+    RationalNumber result = new RationalNumber(numer,denom);
+    if(result.denominator < 0){
+      result.denominator *= -1;
+      result.numerator *= -1;
+    }
+    return result;
+  }
 }
