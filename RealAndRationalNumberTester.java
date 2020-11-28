@@ -17,7 +17,6 @@ public class RealAndRationalNumberTester{
   RationalNumber ran2 = new RationalNumber(5,-3);
   RationalNumber ran3 = new RationalNumber(15,6);
   RationalNumber ran5 = new RationalNumber(20,1);
-  System.out.println(ren3.add(ran5));
   System.out.println(ran1.getValue());
   System.out.println(ran2.getValue());
   System.out.println(ran3.getValue());
@@ -45,5 +44,8 @@ public class RealAndRationalNumberTester{
   System.out.println(ran3.subtract(ran2).toString());
   System.out.println(ran3.subtract(ran5).toString());
   System.out.println(ran2.subtract(ran5).toString());
+  RationalNumber ran6 = new RationalNumber(0,5);
+  System.out.println(ran5.toString());
+  System.out.println(ran6.toString());
 }
 }
