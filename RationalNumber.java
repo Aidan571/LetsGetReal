@@ -1,8 +1,7 @@
-public class RationalNumber extends RealNumber{
+public class RationalNumber extends Number{
   private int numerator, denominator;
 
   public RationalNumber(int nume, int deno){
-    super(0.0);
     numerator = nume;
     denominator = deno;
     if(this.denominator == 0){
@@ -34,6 +33,13 @@ public class RationalNumber extends RealNumber{
     return (this.numerator == other.numerator && this.denominator == other.denominator);
   }
   public String toString(){
+    if(numerator == 0){
+      return "" + 0;
+    }
+    else if(denominator == 1){
+      return "" + numerator;
+    }
+    else
     return "" + numerator + '/' + denominator;
   }
   private static int gcd(int a, int b){
